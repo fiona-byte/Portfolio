@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: grey;
+    color: #FFF;
+    font-size: 2em;
+    /* border: 1px solid #bbb; */
+    transition: all 0.3s linear;
+}
+
+/* @media only screen and (min-width: 700px) {
+    body {
+        height: auto;
+        min-height: 100vh;
+    } */
+}
+/* .zone:hover{
+    background-color: mediumaquamarine;
+} */
+
+/*  NAV  */
+.nav-items {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    list-style: none;
+    font-size: 2rem;
+    background:  midnightblue;
+}
+
+@media only screen and (max-width: 450px) {
+    .nav-items {
+        font-size: 4rem;
+        padding: 0;
+    }
+}
+
+li {
+    display: flex
+    padding: 20px;
+}
+
+li:hover {
+    background-color:grey;
+}
+
+a {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+/*  MAIN  */
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(65deg, #3D3534, #333232 100%);
+}
+
+.intro {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    color: rgb(163, 162, 162);
+    
+}
+
+.project-header {
+    text-align: center;
+    border-bottom: 2px solid white;
+    font-size: 3rem;
+}
+
+#contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background: #333232;
+}
+
+.contact-text {
+    text-align: center;
+}
+
+.contact-link {
+    text-align: center;
+}
+footer {
+    border-top: 3px solid midnightblue;
+    padding: 3rem;
+    text-align: center;
+    background: #333232;
+}
