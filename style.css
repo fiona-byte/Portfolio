@@ -19,19 +19,25 @@ body {
 } */
 
 /*  NAV  */
+.nav-container {
+    width: 100%;
+    position: fixed;
+}
 .nav-items {
     display: flex;
     justify-content: flex-end;
     margin: 0;
     list-style: none;
-    font-size: 2rem;
+    font-size: 2.5rem;
     background:  midnightblue;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
     .nav-items {
-        font-size: 4rem;
+        font-size: 1.5rem;
         padding: 0;
+        display: grid;
+        margin: 3px;
     }
 }
 
@@ -96,4 +102,5 @@ footer {
     padding: 3rem;
     text-align: center;
     background: #333232;
+    font-size: 20px;
 }

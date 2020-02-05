@@ -23,6 +23,7 @@ body {
     display: flex;
     justify-content: flex-end;
     margin: 0;
+    position: fixed;
     list-style: none;
     font-size: 2rem;
     background:  midnightblue;
