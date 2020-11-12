@@ -419,6 +419,8 @@ textarea,
         right: 1.8rem;
     }
 
+    .header { height: 85vh;}
+
     .header__container-flex { justify-content: center; }
     
     .header__container { margin-top: 12rem; }
