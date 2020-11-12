@@ -411,6 +411,14 @@ textarea,
 
     .container { margin: 0 4%; }
 
+    .navigation .navigation__background {
+        right: 2.3rem;
+    }
+
+    .navigation .navigation__btn {
+        right: 1.8rem;
+    }
+
     .header__container-flex { justify-content: center; }
     
     .header__container { margin-top: 12rem; }
@@ -424,12 +432,12 @@ textarea,
 
     .btn,
     .btn:link,
-    .btn:visited { width: 20%; }
+    .btn:visited { width: 70%; }
 
-    .header__text-small { font-size: 1.8rem; }
+    .header__text-small { font-size: 1.6rem; }
     
     .header__text-big {
-        font-size: 3.8rem;
+        font-size: 3.6rem;
     }
 
     .projects__card {
