@@ -3,38 +3,220 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="stylesheet" href="./css/all.css">
+    <title>Chiamaka Odoboh</title>
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="nav-container">
-    <nav id="navbar">
-        <ul class="nav-items">            
-            <li><a href="#welcome-section">About</a></li>
-            <li><a href=".project grid">Work</a></li>
-            <li><a href="#contact-section">Contact</a></li>
-        </ul>
-    </nav>
-    </div>
-    <section id="welcome-section">
-            <h2 class="welcome-name">Hi, I am Chiamaka</h2>
-            <p class="intro">a web developer</p>
+    <div class="container">
+        <div class="header" id="home">
+            <div class="navigation__brand">
+                <h1>CO</h1>
+            </div>
+            <div class="header__container">
+                <div class="header__text-container">
+                    <span class="header__text-small">Hello there 👋</span>
+                    <span class="header__text-big">I'm Chiamaka 😊</span>
+                    <span class="header__text-small">A Frontend Developer</span>
+                </div>
+                <a href="#contact" class="btn">Contact Me</a>
+            </div>
+            <div class="navigation">
+                <input type="checkbox" class="navigation__checkbox" id="navigation-toggle">
+    
+                <label for="navigation-toggle" class="navigation__btn">
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
+                    <div class="bar bar3"></div>
+                </label>
+    
+                <div class="navigation__background">&nbsp;</div>
+    
+                <nav class="navigation__nav">
+                    <ul class="navigation__list">
+                        <li class="navigation__item">
+                            <a href="#home" class="navigation__link">Home</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#about" class="navigation__link">About</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#projects" class="navigation__link">Projects</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#contact" class="navigation__link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-    </section>
-    <div class="project grid">
-        <h2 class="project-header">These are some of my projects!</h2>
+    
+        <main>
+            <section id="about">
+                <div class="center">
+                    <h2 class="section__header">About Me 🤗</h2>
+                </div>
+                <div class="about__container">
+                    <div class="about__text">
+                        <p>
+                            I'm a passionate frontend developer based in Lagos, Nigeria. Aside creating fast, proficient, accessible and responsive  
+                            websites and web applications, I also enjoy solving problems with code. I love writing clean, organized code.
+                        </p>
+                        <p>
+                            I am a well organized person who pays attention to detail. I have interned a few organizations 
+                            such as DevCareer and SheHacksAfrica where I learnt a lot of mordern technologies that are being used.
+                        </p>
+                        <p>
+                            When I'm not writing code, I love taking evening walks, chatting with friends and reading crime novels. 
+                        </p>
+                    </div>
+                    <!-- <div class="about__image">
+                        <img src="./images/about-img.png" alt="">
+                    </div> -->
+                </div>
+            </section>
+    
+            <section id="projects">
+                <div class="center">
+                    <h2 class="section__header">Projects 📂</h2>
+                </div>
+                <div class="projects__container">
+                    <div class="projects__card">
+                        <div class="projects__card-links">
+                            <a href="https://github.com/fiona-byte/Belle" class="projects__github"><ion-icon name="logo-github"></ion-icon></a>
+                            <a href="https://belles.netlify.app/" class="projects__hosted"><ion-icon name="open-outline"></ion-icon></a>
+                        </div>
+                        <div class="projects__card-container">
+                            <h3 class="projects__card-title">Belle</h3>
+                            <div class="projects__card-technologies">
+                                <ul class="projects__card-item">
+                                    <li class="projects__card-list">HTML</li>
+                                    <li class="projects__card-list">CSS</li>
+                                    <li class="projects__card-list">JavaScript</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects__card">
+                        <div class="projects__card-links">
+                            <a href="https://github.com/fiona-byte/Healthy-Switcher" class="projects__github"><ion-icon name="logo-github"></ion-icon></a>
+                            <a href="#" class="projects__hosted"><ion-icon name="open-outline"></ion-icon></a>
+                        </div>
+                        <div class="projects__card-container">
+                            <h3 class="projects__card-title">Healthy-Switcher</h3>
+                            <div class="projects__card-technologies">
+                                <ul class="projects__card-item">
+                                    <li class="projects__card-list">HTML</li>
+                                    <li class="projects__card-list">CSS</li>
+                                    <li class="projects__card-list">JavaScript</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects__card">
+                        <div class="projects__card-links">
+                            <a href="https://github.com/fiona-byte/Todo-app" class="projects__github"><ion-icon name="logo-github"></ion-icon></a>
+                            <a href="https://fiona-byte.github.io/Todo-app/" class="projects__hosted"><ion-icon name="open-outline"></ion-icon></a>
+                        </div>
+                        <div class="projects__card-container">
+                            <h3 class="projects__card-title">Todo App</h3>
+                            <div class="projects__card-technologies">
+                                <ul class="projects__card-item">
+                                    <!-- <li class="projects__card-list">HTML</li> -->
+                                    <li class="projects__card-list">CSS</li>
+                                    <li class="projects__card-list">React JS</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects__card">
+                        <div class="projects__card-links">
+                            <a href="https://github.com/fiona-byte/CSS-background-generator" class="projects__github"><ion-icon name="logo-github"></ion-icon></a>
+                            <a href="#" class="projects__hosted"><ion-icon name="open-outline"></ion-icon></a>
+                        </div>
+                        <div class="projects__card-container">
+                            <h3 class="projects__card-title">CSS background generator</h3>
+                            <div class="projects__card-technologies">
+                                <ul class="projects__card-item">
+                                    <li class="projects__card-list">HTML</li>
+                                    <li class="projects__card-list">CSS</li>
+                                    <li class="projects__card-list">JavaScript</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects__card">
+                        <div class="projects__card-links">
+                            <a href="https://github.com/fiona-byte/DrumKit" class="projects__github"><ion-icon name="logo-github"></ion-icon></a>
+                            <a href="#" class="projects__hosted"><ion-icon name="open-outline"></ion-icon></a>
+                        </div>
+                        <div class="projects__card-container">
+                            <h3 class="projects__card-title">Drum Kit</h3>
+                            <div class="projects__card-technologies">
+                                <ul class="projects__card-item">
+                                    <li class="projects__card-list">HTML</li>
+                                    <li class="projects__card-list">CSS</li>
+                                    <li class="projects__card-list">JavaScript</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section id="contact">
+                <div class="center">
+                    <h2 class="section__header">Contact me 🤭</h2>
+                </div>
+                <div class="contact__text">
+                    <h4></h4>
+                </div>
+                <form action="" class="form">
+                    <div class="form__group">
+                        <input class="form__input" type="text" name="name" id="name" placeholder="Name" required>
+                        <label for="name" class="form__label">Name</label>
+                    </div>
+                    <div class="form__group">
+                        <input class="form__input" type="email" name="email" id="email" placeholder="Email" required>
+                        <label for="email" class="form__label">Email</label>
+                    </div>
+                    <div class="form__group">
+                        <input class="form__input" type="text" name="subject" id="subject" placeholder="Subject" required>
+                        <label for="subject" class="form__label">Subject</label>
+                    </div>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
+                    <button class="btn">Send</button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__text">
+                <p>&copy; <span id="copyright"></span> Chiamaka Odoboh</p>
+            </div>
+            <div class="footer__social">
+                <ul class="footer__social-items">
+                    <li class="footer__social-list">
+                        <a href="https://github.com/fiona-byte" class="footer__social-links"><ion-icon name="logo-github"></ion-icon></a>
+                    </li>
+                    <li class="footer__social-list">
+                        <a href="https://twitter.com/_feeohnah" class="footer__social-links"><ion-icon name="logo-twitter"></ion-icon></a>
+                    </li>
+                    <li class="footer__social-list">
+                        <a href="" class="footer__social-links"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
     </div>
-    <div id="contact-section">
-        <h2 class="contact-text">Contact me let's work together</h2>
-            <a class="contact-link" href=""><i class="fab fa-facebook-square"></i>Facebook</a>
-            <a class="contact-link" href=""><i class="fab fa-github-square"></i>Github</a>
-            <a class="contact-link" href=""><i class="fab fa-twitter"></i>Twitter</a>
-            <a class="contact-link" href=""><i class="fas fa-envelope-square"></i>Mail</a>
-            <a class="contact-link" href=""><i class="fas fa-phone-alt"></i>Call Me</a>
-    </div>
-    <footer>© 2020</footer>
+
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script>
+        const footerYear = document.getElementById("copyright");
+
+        footerYear.appendChild(document.createTextNode(new Date().getFullYear()));
+    </script>
 </body>
 </html>
