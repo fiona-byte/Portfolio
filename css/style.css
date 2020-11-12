@@ -37,11 +37,11 @@ section { padding: 9rem 0; }
     background-clip: text;
     letter-spacing: .3rem;
     transition: all .1s;
-    margin-bottom: 2.7rem;
+    margin-bottom: 2.4rem;
 }
 
 .section__header:hover {
-    transform: skewY(4deg);
+    transform: skewY(3deg);
     text-shadow: .5rem 1rem 2rem rgba(119, 118, 118, 0.2)
 }
 
@@ -67,7 +67,6 @@ a {
     border: none;
     cursor: pointer;
     outline: none;
-    display: relative;
     transition: all .4s;
 }
 
@@ -199,9 +198,16 @@ a {
 
 .header { height: 100vh; }
 
-.header__container {
-    position: absolute;
-    top: 35%;
+.header__container-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__container { margin-top: 15rem; }
+
+.header__img-container { 
+    margin-top: -6rem;
+    margin-left: -2rem;
 }
 
 .header__text-small {
@@ -221,7 +227,6 @@ a {
 
 .about__container {
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     margin: 0 7%;
 }
@@ -236,7 +241,7 @@ a {
 
 .projects__container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     place-items: center;
 }
 
@@ -383,9 +388,8 @@ textarea,
 /*                             Media Queries                              */
 
 @media all and (max-width: 768px) {
-    .projects__container {
-        grid-template-columns: 1fr 1fr;
-    }
+
+    section { padding: 6rem 0; }
     
     .projects__card {
         margin: 2.4rem 0;
@@ -404,19 +408,35 @@ textarea,
 }
 
 @media all and (max-width: 425px) {
-    .header__container {
-        position: absolute;
-        top: 60%;
-        left: 2%;
-        transform: translate(2%, -60%);
-    }
 
-    .projects__container {
-        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
-    }
+    .container { margin: 0 4%; }
+
+    .header__container-flex { justify-content: center; }
+    
+    .header__container { margin-top: 12rem; }
+
+    .header__img-container img { display: none; }
+
+    .projects__container { place-content: center; }
 }
 
 @media all and (max-width: 375px) {
+
+    .btn,
+    .btn:link,
+    .btn:visited { width: 20%; }
+
+    .header__text-small { font-size: 1.8rem; }
+    
+    .header__text-big {
+        font-size: 3.8rem;
+    }
+
+    .projects__card {
+        width: 27rem;
+        height: 32rem;
+    }
+
     textarea,
     .form__input {
         width: 95%;
