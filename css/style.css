@@ -307,6 +307,12 @@ a {
     margin-bottom: 2rem;
 }
 
+.contact__text h4 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-bottom: 1.8rem;
+}
+
 .form__group:not(:last-child) { margin-bottom: .8rem; }
 
 .form__input { padding: 1.1rem 1.5rem; }
@@ -325,10 +331,9 @@ textarea,
     margin-left: 25%;
 }
 
-textarea:focus {
-    outline: none;
-    box-shadow: 0 1rem 2rem #272727;
-}
+textarea { padding: 1.7rem; }
+
+.form__input:focus { box-shadow: 0 1rem 2rem #272727; }
 
 .form .btn {
     width: 10%;
@@ -336,12 +341,13 @@ textarea:focus {
     margin-top: 1.5%;
 }
 
+textarea:focus,
 .form__input:focus {
     outline: none;
-    box-shadow: 0 1rem 2rem #272727;
     border-bottom: 3px solid #067906;
 }
 
+textarea:focus:invalid,
 .form__input:focus:invalid {
     border-bottom:3px solid #801336;
 }
