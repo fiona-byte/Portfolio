@@ -37,7 +37,7 @@ section { padding: 9rem 0; }
     background-clip: text;
     letter-spacing: .3rem;
     transition: all .1s;
-    margin-bottom: 2.4rem;
+    margin-bottom: 1.4rem;
 }
 
 .section__header:hover {
@@ -196,17 +196,17 @@ a {
 
 /*                             Header or Introduction                      */
 
-.header { height: 100vh; }
+.header { height: 80vh; }
 
 .header__container-flex {
     display: flex;
     justify-content: space-between;
 }
 
-.header__container { margin-top: 15rem; }
+.header__container { margin-top: 12rem; }
 
 .header__img-container { 
-    margin-top: -6rem;
+    margin-top: -9rem;
     margin-left: -2rem;
 }
 
@@ -231,9 +231,12 @@ a {
     margin: 0 7%;
 }
 
-.about__text p {
-    font-size: 1.7rem;
+.about__text p:not(:first-child) {
     margin: 3rem 0;
+}
+
+.about__text p{
+    font-size: 1.7rem;
     line-height: 2.5rem;
 }
 
@@ -322,6 +325,11 @@ textarea,
     margin-left: 25%;
 }
 
+textarea:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem #272727;
+}
+
 .form .btn {
     width: 10%;
     margin-left: 45%;
@@ -343,7 +351,7 @@ textarea,
 .form__label {
     font-size: 1.5rem;
     font-weight: 500;
-    margin: .7rem 0 0 3rem;
+    margin-top: 4px;
     display: none;
     transition: all .3s;
 }
@@ -389,7 +397,17 @@ textarea,
 
 @media all and (max-width: 768px) {
 
-    section { padding: 6rem 0; }
+    section { padding: 7rem 0; }
+
+    .header__container-flex { justify-content: center; }
+
+    .header__container { margin-top: 9rem; }
+
+    .header__img-container img { display: none; }
+
+    .header__text-small { font-size: 1.8rem; }
+    
+    .header__text-big { font-size: 3.9rem; }
     
     .projects__card {
         margin: 2.4rem 0;
@@ -405,6 +423,7 @@ textarea,
         width: 25%;
         margin-left: 37.5%;
     }
+    
 }
 
 @media all and (max-width: 425px) {
@@ -420,12 +439,8 @@ textarea,
     }
 
     .header { height: 85vh;}
-
-    .header__container-flex { justify-content: center; }
     
     .header__container { margin-top: 12rem; }
-
-    .header__img-container img { display: none; }
 
     .projects__container { place-content: center; }
 }
@@ -434,13 +449,11 @@ textarea,
 
     .btn,
     .btn:link,
-    .btn:visited { width: 70%; }
+    .btn:visited { width: 85%; }
 
     .header__text-small { font-size: 1.6rem; }
     
-    .header__text-big {
-        font-size: 3.6rem;
-    }
+    .header__text-big { font-size: 3.6rem; }
 
     .projects__card {
         width: 27rem;
