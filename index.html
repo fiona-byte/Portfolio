@@ -28,19 +28,18 @@
                     <img src="./images/memoji.png" alt="" class="header__img">
                 </div>
             </div>
-            <div class="navigation">
-                <input type="checkbox" class="navigation__checkbox" id="navigation-toggle">
+            <div class="navigation" id="navigation">
+
+                <div id="navigation-btn" class="navigation__btn">
+                    <div class="bar" id="bar1"></div>
+                    <div class="bar" id="bar2"></div>
+                    <div class="bar" id="bar3"></div>
+                </div>
     
-                <label for="navigation-toggle" class="navigation__btn">
-                    <div class="bar bar1"></div>
-                    <div class="bar bar2"></div>
-                    <div class="bar bar3"></div>
-                </label>
-    
-                <div class="navigation__background">&nbsp;</div>
+                <div class="navigation__background" id="navigation-bg"></div>
     
                 <nav class="navigation__nav">
-                    <ul class="navigation__list">
+                    <ul class="navigation__list" id="navigation-menu">
                         <li class="navigation__item">
                             <a href="#home" class="navigation__link">Home</a>
                         </li>
@@ -67,11 +66,11 @@
                     <div class="about__text">
                         <p>
                             I'm a passionate frontend developer based in Lagos, Nigeria. Aside creating fast, proficient, accessible and responsive  
-                            websites and web applications, I also enjoy solving problems with code. I love writing clean, organized code.
+                            websites and web applications, I also enjoy solving problems with code and I love writing clean, organized code.
                         </p>
                         <p>
-                            I am a well organized person who pays attention to detail. I have interned a few organizations 
-                            such as DevCareer and SheHacksAfrica where I learnt a lot of mordern technologies that are being used.
+                            I am a well organized person who pays keen attention to details. I have interned at a few organizations 
+                            such as DevCareer and SheHacksAfrica where I learnt a lot of modern technologies that are being used.
                         </p>
                         <p>
                             When I'm not writing code, I love taking evening walks, chatting with friends and reading crime novels. 
@@ -216,11 +215,8 @@
         </footer>
     </div>
 
-    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-    <script>
-        const footerYear = document.getElementById("copyright");
+    <script src="./js/index.js"></script>
 
-        footerYear.appendChild(document.createTextNode(new Date().getFullYear()));
-    </script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 </body>
 </html>

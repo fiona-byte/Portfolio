@@ -111,10 +111,8 @@ a {
     position: fixed;
     top: 0;
     left: 0;
+    width: 100%;
     z-index: 1500;
-    opacity: 0;
-    width: 0;
-    transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .navigation .navigation__list {
@@ -125,6 +123,8 @@ a {
     list-style: none;
     width: 100%;
     text-align: center;
+    display: none;
+    transition: all .8s cubic-bezier(0.68, -0.55, 0.2, 1.5);
 }
 
 .navigation .navigation__item { margin: 1.8rem 0; }
@@ -159,37 +159,32 @@ a {
     margin-left: 1rem;
 }
 
-.bar2{ width: 3rem; }
+#bar2{ width: 3rem; }
 
-.bar1,
-.bar3 {
+#bar1,
+#bar3 {
     width: 2.4rem;
     position: absolute;
     left: .15rem;
     transition: all .3s;
 }
 
-.bar1 { top: -.7rem; }
+#bar1 { top: -.8rem; }
 
-.bar3 { top: .7rem; }
+#bar3 { top: .8rem; }
 
-.navigation__btn:hover .bar1 { top: -.85rem; } 
+.open { transform: scale(140); }
 
-.navigation__btn:hover .bar3 { top: .85rem; } 
-
-.navigation__checkbox:checked ~ .navigation__background { transform: scale(140); }
-
-.navigation__checkbox:checked ~ .navigation__nav {
-    opacity: 1;
-    width: 100%;
+.menu.navigation__list {
+    display: block;
 }
 
-.navigation__checkbox:checked + .navigation__btn .bar2 { background: transparent; }
-.navigation__checkbox:checked + .navigation__btn .bar3 {
+.change #bar2 { background: transparent; }
+.change #bar3 {
     top: 0;
     transform: rotate(-45deg);
 }
-.navigation__checkbox:checked + .navigation__btn .bar1 {
+.change #bar1 {
     top: 0;
     transform: rotate(45deg);
 }
