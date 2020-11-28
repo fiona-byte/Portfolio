@@ -2,7 +2,7 @@
 //Navigation Bar
 const navBtn = document.getElementById("navigation-btn");
 const navBg = document.getElementById("navigation-bg");
-const navMenu = document.getElementById("navigation-menu");
+const navMenu = document.getElementById("navigation-nav");
 const navLink = document.querySelectorAll(".navigation__item");
 
 navBtn.addEventListener("click", () => {
