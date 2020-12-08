@@ -19,6 +19,7 @@ body {
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 /*                         Global Classes                          */
@@ -68,6 +69,79 @@ a {
     cursor: pointer;
     outline: none;
     transition: all .4s;
+}
+.scroll-to-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 5rem;
+    right: 4rem;
+    font-size: 2.5rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    /* background: transparent; */
+    background-image: linear-gradient(to right bottom, #c72c41, #801336);
+    box-shadow: 0px .2rem .5rem #272727;
+    color: #f0f0f0;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: background .8s ease-in-out;
+}
+
+.top-btn { 
+    height: 2px; 
+    background-color: #f0f0f0;
+    margin-left: 1.2rem;
+}
+
+#btn1,
+#btn2 {
+    width: 1.4rem;
+}
+
+#btn1 { transform: rotateZ(-40deg); }
+
+#btn2 {
+    transform: rotateZ(40deg);
+    margin-left: 2.2rem;
+    margin-top: -.2rem;
+}
+
+/*          Btn Animations            */
+
+.btn-entrance {
+    animation-name: btn-entrance;
+    animation-fill-mode: both;
+    animation-duration: 0.5s;
+}
+
+@keyframes btn-entrance {
+    from {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.btn-exit {
+    animation-name: btn-entrance;
+    animation-fill-mode: both;
+    animation-duration: 0.5s;
+}
+
+@keyframes btn-exit {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: scale3d(0.3, 0.2, 0.1);
+    }
 }
 
 /*                               Navigation                      */

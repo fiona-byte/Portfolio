@@ -26,6 +26,33 @@ navLink.forEach((e) => {
 
 });
 
+// scroll to top button
+
+const scrollToTopButton = document.getElementById("scroll-to-top");
+
+window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 300) {
+        if(!scrollToTopButton.classList.contains("btn-entrance")) {
+            scrollToTopButton.classList.remove("btn-exit");
+            scrollToTopButton.classList.add("btn-entrance");
+            scrollToTopButton.style.display = "block";
+        }
+    }
+    else {
+        if(!scrollToTopButton.classList.contains("btn-exit")) {
+            scrollToTopButton.classList.remove("btn-entrance");
+            scrollToTopButton.classList.add("btn-exit");
+            setTimeout(() => {
+                scrollToTopButton.style.display = "none";
+            }, 300);
+        }
+    }
+});
+
+scrollToTopButton.addEventListener("click", () => {
+    window.scrollTo(0, 0);
+});
+
 //Copyright date
 const footerYear = document.getElementById("copyright");
 
