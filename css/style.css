@@ -9,6 +9,7 @@
 html {
     font-size: 62.5%;
     background: #24292e;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -74,12 +75,11 @@ a {
     display: none;
     position: fixed;
     bottom: 5rem;
-    right: 4rem;
+    right: 3rem;
     font-size: 2.5rem;
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
-    /* background: transparent; */
     background-image: linear-gradient(to right bottom, #c72c41, #801336);
     box-shadow: 0px .2rem .5rem #272727;
     color: #f0f0f0;
@@ -92,19 +92,17 @@ a {
 .top-btn { 
     height: 2px; 
     background-color: #f0f0f0;
-    margin-left: 1.2rem;
+    margin-left: 1.3rem;
 }
 
 #btn1,
-#btn2 {
-    width: 1.4rem;
-}
+#btn2 { width: 1.4rem; }
 
 #btn1 { transform: rotateZ(-40deg); }
 
 #btn2 {
     transform: rotateZ(40deg);
-    margin-left: 2.2rem;
+    margin-left: 2.3rem;
     margin-top: -.2rem;
 }
 
@@ -503,6 +501,11 @@ textarea:focus:invalid,
 @media all and (max-width: 425px) {
 
     .container { margin: 0 4%; }
+
+    .scroll-to-top-btn {
+        bottom: 2.5rem;
+        right: 1rem;
+    }
 
     .navigation .navigation__background {
         right: 2.3rem;
