@@ -355,10 +355,21 @@ a {
     text-transform: capitalize;
 }
 
-.projects__card-item { display: flex; }
+.project__card-description { 
+    font-size: 1.3rem;
+    display: block;
+    font-weight: 500;
+    margin-top: .4rem;
+    font-style: italic;
+}
+
+.projects__card-item { 
+    display: flex; 
+    flex-wrap: wrap;
+}
 
 .projects__card-list {
-    margin: 0 .7rem;
+    margin: .3rem .7rem;
     font-size: 1.1rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
